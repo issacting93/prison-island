@@ -1,0 +1,35 @@
+[
+  {
+    "type": "ChooseCharacterPage"
+  },
+  {
+    "type": "ItemDetails",
+    "page": "11AD",
+    "item01": ["70%", "10%", "https://pzon31.csb.app/dist/Book01.html"],
+    "item02": ["40%", "30%", "https://pzon31.csb.app/dist/Book01.html"],
+    "item03": ["10%", "40%", "https://pzon31.csb.app/dist/Book01.html"]
+  },
+  {
+    "type": "EscapeChoice",
+    "background": "",
+    "choices": ["Option 01", "Option 02", "Option 03", "Option 04"]
+  },
+  {
+    "type": "Transition",
+    "video": "https://www.youtube.com/embed/oj2jV5SxtW4",
+    "description": "CARPENTERS GETTING SENT BACK TO CHANGI FOR REFUSING TO DO WORK",
+    "option01": ["70%", "10%", "Opt01"],
+    "option02": ["70%", "10%", "Opt02"],
+    "option03": ["70%", "10%", "Opt03"],
+    "option04": ["70%", "10%", "Opt04"]
+  },
+  {
+    "type": "EscapeChoice",
+    "background": "",
+    "choices": ["Option 01", "Option 02", "Option 03", "Option 04"]
+  },
+  {
+    "type": "Biography",
+    "img": "Image3.png"
+  }
+]

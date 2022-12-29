@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+
+<body>
+    <audio
+    style="position:absolute; right:0px;z-index:10;"
+    preload="auto"
+    autoplay
+
+    src="../Audio/SFX/221109_iRiot_Stage 1_WheelBarrow Pop Up SFX.mp3"
+  > </audio>
+  <div class="image-container">
+    <img class="map animated fadeInUp" src="./../Images/Stage01/Construction/Map Pop up/map.png" alt="Girl in a jacket"  width="auto" height="auto" >
+    <img class="map-pop-up animated fadeInUp delay-01" src="./../Images/Stage01/Construction/Map Pop up/map-buildings_0000_Layer-9.png" alt="Girl in a jacket"  width="auto" height="auto" >
+    <img class="map-pop-up animated fadeInUp delay-02" src="./../Images/Stage01/Construction/Map Pop up/map-buildings_0001_Layer-8.png" alt="Girl in a jacket"  width="auto" height="auto" >
+    <img class="map-pop-up animated fadeInUp delay-03" src="./../Images/Stage01/Construction/Map Pop up/map-buildings_0002_Layer-1.png" alt="Girl in a jacket"  width="auto" height="auto" >
+    <img class="map-pop-up animated fadeInUp delay-04" src="./../Images/Stage01/Construction/Map Pop up/map-buildings_0003_Layer-2.png" alt="Girl in a jacket"  width="auto" height="auto" >
+    <img class="map-pop-up animated fadeInUp delay-05" src="./../Images/Stage01/Construction/Map Pop up/map-buildings_0004_Layer-3.png" alt="Girl in a jacket"  width="auto" height="auto" >
+    <img class="map-pop-up animated fadeInUp delay-06" src="./../Images/Stage01/Construction/Map Pop up/map-buildings_0005_Layer-5.png" alt="Girl in a jacket"  width="auto" height="auto" >
+    <img class="map-pop-up animated fadeInUp delay-07" src="./../Images/Stage01/Construction/Map Pop up/map-buildings_0006_Layer-6.png" alt="Girl in a jacket"  width="auto" height="auto" >
+    <img class="map-pop-up animated fadeInUp delay-08" src="./../Images/Stage01/Construction/Map Pop up/map-buildings_0007_Layer-7.png" alt="Girl in a jacket"  width="auto" height="auto" >
+    <img class="map-pop-up animated fadeInUp " src="./../Images/Stage01/Construction/Map Pop up/map-buildings_0008_Layer-0.png" alt="Girl in a jacket"  width="auto" height="auto" >
+
+
+</div>
+
+
+</body>
+</html>
+
+</script>
+
+<style>
+
+#flipbook {
+    overflow-y: scroll !important;
+}
+    img{
+    width: 100%;
+    height: auto;
+    max-width: 1400px;
+    }
+.map-pop-up{
+    position: absolute;
+    animation-delay: .4s;
+}
+.gif01 {
+    background-image: url(BBALL-short.gif);
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.delay-01{
+    animation-delay: 3.5s;
+}
+
+.delay-02{
+    animation-delay: 3.45s;
+}
+.delay-03{
+    animation-delay: 3.6s;
+}
+
+.delay-04{
+    animation-delay: 3.26s;
+}
+.delay-05{
+    animation-delay: 3.65s;
+}
+.delay-06{
+    animation-delay: 3.7s;
+}
+.delay-07{
+    animation-delay: 3.75s;
+}
+
+.delay-08{
+    animation-delay: 3.85s;
+}
+
+.map{
+    position: absolute;
+}
+
+  /* Animation */
+
+  @keyframes fadeInUp {
+    from {
+      transform: translate3d(0, 40px, 0);
+    }
+
+    to {
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
+    }
+  }
+
+  @-webkit-keyframes fadeInUp {
+    from {
+      transform: translate3d(0, 40px, 0);
+    }
+
+    to {
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  @-webkit-keyframes fadeIn {
+    from {
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  .animated {
+    animation-duration: .7s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: .7s;
+    -webkit-animation-fill-mode: both;
+  }
+
+  .animatedFadeInUp {
+    opacity: 0;
+  }
+
+  .fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+    animation-timing-function:cubic-bezier(0,0,0.58,1);
+  }
+
+  .fadeIn {
+    opacity: 0;
+    animation-name: fadeIn;
+    -webkit-animation-name: fadeIn;
+  }
+</style>

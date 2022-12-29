@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+
+<body>
+    <div id="viewer">
+        <audio id="audio"
+        style="position:absolute; right:0px;z-index:10;"
+        preload="auto"
+        src="Coconut_SFX.mp3"
+      > </audio>
+  <div class="image-container">
+    <img src="Images/chart.png" alt="Girl in a jacket" >
+    <audio
+    style="position:absolute; right:0px;z-index:10;"
+    preload="auto"
+    autoplay
+    loop
+    src="Audio/SFX/Coconut_SFX.mp3"
+   > </audio>
+</div>
+</body>
+</html>
+
+</script>
+
+<style>
+
+    .flipbook {
+  height: 100%;
+  transition: margin-left 0.25s ease-out;
+  width: 100%;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.flipbook .page {
+  height: 100%;
+  width: 100%;
+}
+.flipbook .page img {
+  max-width: 100%;
+  height: 100%;
+}
+</style>

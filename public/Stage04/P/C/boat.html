@@ -1,0 +1,159 @@
+
+
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta charset="utf8" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="icon" type="image/svg+xml" href="../../../../Prisoner_thumbnail.png" />
+        <title>Prison Island</title>
+
+
+        <link rel="stylesheet" href="../../../style.css" />
+      </head>
+    <div class="main">
+        <audio
+        style="position:absolute; right:0px;z-index:10;"
+        preload="auto"
+        autoplay
+        src="221109_iRiot Stage 4 Priosner_Head For The Docks.mp3"
+      > </audio>
+        <div class="img-container">
+            <video width="100%" height="100%" autoplay loop>
+                <source src="boat.MP4"type="video/mp4" />
+                <source src="movie.ogg" type="video/ogg" />
+                Your browser does not support the video tag.
+              </video>
+            <div class="outcome"></div>
+          <div  class="Choice-01">  </div>
+    <a href="A/end-01-outcome.html" class="choice Choice-02">  </a>
+      <a href="B/end-01-outcome.html" class="choice Choice-03"> </a>
+
+
+        </div>
+        <!--
+     <div class="text-container">You see a group of detainees armed with changkols and parangs run towards the mess hall. What do you do?</div>
+
+        -->
+        <div class="loading-bar-wrapper">
+            <div class="loading-bar"></div>
+        </div>
+    </div>
+    <script>
+        setTimeout(openUrl, 30000); // Wait 5 secondsx
+        function openUrl(){
+        window.open('A/end-01-outcome.html',"_self");
+        }
+        </script>
+    <style>
+    .img-container{
+        max-width: 1600px;
+        aspect-ratio: 16/9;
+        background-image: url("Boat-BG.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        min-height: unset;
+        position: relative;
+        max-height: 100%;
+        width: calc(100vh*16/9 - 100px);
+        margin: auto;
+        z-index: 1111;
+        vertical-align: middle;
+        background-position: center;
+        animation: fadeIn 0.2s;
+        opacity: 0;
+        -webkit-animation: fadeIn 0.5s;
+        -moz-animation: fadeIn 0.5s;
+        -o-animation: fadeIn 0.5s;
+        -ms-animation: fadeIn 0.5s;
+        animation-fill-mode: forwards;
+
+    }
+    .choice:hover {
+        opacity: 0.7;
+    }
+    .choice {
+        cursor: pointer;
+        z-index: 11;
+    }
+
+    .Choice-01{
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url("Boat-BG.png");
+        min-height: unset;
+        position: absolute;
+        height: 13.653%;
+        width:32.25%;
+        margin: auto;
+        background-position: center;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        animation: fadeIn 0.2s;
+        -webkit-animation: fadeIn 0.5s;
+        -moz-animation: fadeIn 0.5s;
+        -o-animation: fadeIn 0.5s;
+        -ms-animation: fadeIn 0.5s;
+        animation-fill-mode: forwards;
+
+    }
+    .Choice-02{
+        background-image: url("Boat-Options-02.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        min-height: unset;
+        position: absolute;
+        height: 13.653%;
+        width:32.25%;
+        margin: auto;
+        background-position: left;
+        left:64.625%;
+        top:10.434%;
+        height: 2.997%;
+        width:35.375%;
+        margin-top: 3%;
+        opacity: 0;
+        animation: fadeIn 0.2s;
+        -webkit-animation: fadeIn 0.5s;
+        -moz-animation: fadeIn 0.5s;
+        -o-animation: fadeIn 0.5s;
+        -ms-animation: fadeIn 0.5s;
+        animation-fill-mode: forwards;
+        animation-delay: 0.6s;
+    }
+    .Choice-03{
+        background-image: url("Boat-Options-01.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        min-height: unset;
+        position: absolute;
+        margin: auto;
+        background-position: left;
+        margin-top: 6%;
+        left:64.625%;
+        top:10.434%;
+        height: 2.997%;
+        width:35.375%;
+        opacity: 0;
+        animation: fadeIn 0.2s;
+        -webkit-animation: fadeIn 0.5s;
+        -moz-animation: fadeIn 0.5s;
+        -o-animation: fadeIn 0.5s;
+        -ms-animation: fadeIn 0.5s;
+        animation-fill-mode: forwards;
+        animation-delay: 1.3s;
+    }
+    .main {
+        display: flex;
+        align-items: center;
+        height: 100vh;
+    }
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+    </style>

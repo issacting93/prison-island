@@ -1,0 +1,196 @@
+<div></div><!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Svelte app</title>
+
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <main><div class="credits-container">
+<div class="credits-text" id="credits"></div>
+
+<div class="up-btn" onclick="buttonClick(-1)" ></div>
+
+<div class="down-btn" onclick="buttonClick(1)"></div>
+
+
+<a class="back-btn" href="https://www.riotisland.com/Stage04/W/index.html" ></a>
+</div>
+<audio
+style="position:absolute; right:0px;z-index:10;"
+preload="auto"
+autoplay
+loop
+src="221113_iRiot Stage 4_End Credits Music.mp3"
+> </audio>
+<audio id="click" src="./Audio/SFX/Clicking_SFX.mp3"></audio>
+</main>
+
+<style>
+.back-btn
+{
+        background-image: url("text-next-btn.png");
+        position: absolute;
+        width: 4%;
+        height: 6%;
+        right: 40px;
+        bottom: 40px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: 11;
+        background-position: center;
+        transform: rotate(-180deg);
+}
+.up-btn {
+        background-image: url("text-next-btn.png");
+        position: absolute;
+        width: 4%;
+        height: 6%;
+        right: 7%;
+        top: 33%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: 11;
+        background-position: center;
+        transform: rotate(-90deg);
+}
+    .down-btn {
+        background-image: url("text-next-btn.png");
+        position: absolute;
+        width: 4%;
+        height: 6%;
+        right: 7%;
+        top: 40%;
+        background-repeat: no-repeat;
+        z-index: 11;
+        background-size: contain;
+        transform: rotate(90deg);
+        background-position: center;
+}
+    main{
+        background-color: black;
+    }
+.inkcontainer{
+    background-image: url(inkblot.png);
+    z-index: 111;
+    position: fixed;
+    height: 100%;
+    width: 100vw;
+    top: 0px;
+    background-size: cover;
+}
+
+.credits-container{
+    max-width: 1600px;
+    background-image: url("./Stage04/Endings/Credits-bg.gif");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: auto;
+    position: relative;
+    background-size: contain;
+}
+
+
+.credits-text{
+    background-image: url("./Stage04/Endings/credits-text-01.png");
+    height: 100%;
+    aspect-ratio: 16/9;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: auto;
+    position: relative;
+    width: 100vw;
+    background-size: contain;
+    max-width: 1600px;
+}
+.inkcontainer02 {
+    background-image: url(inkblot.png);
+    z-index: 111;
+    position: absolute;
+    height: 100%;
+    top: 0px;
+    background-size: cover;
+    scroll-behavior: smooth;
+    transform: scale(1.15);
+}
+.text-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    text-align: center;
+    width: 100vw;
+    position: relative;
+    margin:0px;
+    overflow: hidden;
+    overflow: hidden;
+    padding:0px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-family: CrisomPro;
+    color: black;
+    background-image: url(01-02-bg.png);
+    font-weight: 700;
+}
+
+</style>
+
+<script>
+
+var textNumber = 2;
+
+function buttonClick(increment){
+
+    textNumber += increment;
+    if(textNumber >= 9){
+        textNumber=2;
+    }
+    else if(textNumber <= 2){
+        textNumber=9;
+    }
+switch(textNumber) {
+
+  case 2:
+  document.getElementById("credits").style.backgroundImage = "url('credits-text-01.png')";
+  playClick();
+    break;
+    case 3:
+    document.getElementById("credits").style.backgroundImage = "url('credits-text-02.png')";
+    playClick();
+  break;
+    case 4:
+    document.getElementById("credits").style.backgroundImage = "url('credits-text-03.png')";
+    playClick();
+    break;
+    case 5:
+    document.getElementById("credits").style.backgroundImage = "url('credits-text-04.png')";
+    playClick();
+    break;
+    case 6:
+    document.getElementById("credits").style.backgroundImage = "url('credits-text-05.png')";
+    playClick();
+    break;
+    case 7:
+    document.getElementById("credits").style.backgroundImage = "url('credits-text-06.png')";
+    playClick();
+    break;
+    case 8:
+    document.getElementById("credits").style.backgroundImage = "url('credits-text-07.png')";
+    playClick();
+    break;
+  default:
+  document.getElementById("text").innerHTML = "00";
+}
+}
+let audio  = document.getElementById("click");
+
+function playClick() {
+    if (audio.paused) {
+      audio.play();
+    } else {
+      audio.currentTime = 0;
+    }
+      }
+</script>

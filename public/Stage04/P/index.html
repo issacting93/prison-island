@@ -1,0 +1,177 @@
+
+
+    <!DOCTYPE html>
+    <html>
+      <head>
+
+        <meta charset="utf8" />
+        <meta name="viewport" content="width=device-width" />
+
+        <link rel="icon" type="image/svg+xml" href="../../../Prisoner_thumbnail.png" />
+        <title>Prison Island</title>
+
+        <link rel="stylesheet" href="../../../style.css" />
+      </head>
+      <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7SPT3P2Y9E"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7SPT3P2Y9E');
+</script>
+    <div class="main">
+
+        <div class="img-container">
+            <audio
+            style="position:absolute; right:0px;z-index:10;"
+            preload="auto"
+            autoplay
+            src="221113_iRiot Stage 4 Priosner_POV Of Mess Hall.mp3"
+          > </audio>
+            <div class="outcome"></div>
+          <a href="A/options.html" class="choice  Choice-01">  </a>
+          <a href="B/options.html" class="choice Choice-02">  </a>
+      <a href="C/options.html" class="choice  Choice-03"> </a>
+        </div>
+        <!--
+     <div class="text-container">You see a group of detainees armed with changkols and parangs run towards the mess hall. What do you do?</div>
+
+        -->
+
+        <div class="loading-bar-wrapper">
+            <div class="loading-bar"></div>
+        </div>
+    </div>
+<script>
+   setTimeout(openUrl, 30000); // Wait 5 secondsx
+    function openUrl(){
+    window.open('A/options.html',"_self");
+    }
+</script>
+    <style>
+
+    .img-container{
+        max-width: 1600px;
+        aspect-ratio: 16/9;
+        background-image: url("Canteen-BG.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        min-height: unset;
+        position: relative;
+        max-height: 100%;
+        max-width: 1600px;
+        width: calc(100vh*16/9 - 100px);
+        margin: auto;
+        z-index: 1111;
+        vertical-align: middle;
+        background-position: center;
+        -webkit-animation: fadeIn 2.5s;
+        -moz-animation: fadeIn 2.5s;
+        -o-animation: fadeIn 2.5s;
+        -ms-animation: fadeIn 2.5s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+    }
+    .outcome{
+        max-width: 1600px;
+        aspect-ratio: 16/9;
+        background-image: url("Lalang-Outcome.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        min-height: unset;
+        position: absolute;
+        display: none;
+        max-width: 1600px;
+        margin: auto;
+        height: 100%;
+        background-position: left;
+        max-height: 100vh;
+    }
+
+    .Choice-01{
+        background-image: url("Choice-01.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        min-height: unset;
+        position: absolute;
+        height: 4.55%;
+        width:26%;
+        margin: auto;
+        background-position: left;
+        left:68.4375%;
+        top: 76.812%;
+        height: 4.551%;
+        width:26%;
+        -webkit-animation: fadeIn 2.5s;
+        -moz-animation: fadeIn 2.5s;
+        -o-animation: fadeIn 2.5s;
+        -ms-animation: fadeIn 2.5s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+        animation-delay:  2s;
+    }
+    .choice:hover {
+        opacity: 0.7;
+    }
+    .choice {
+        cursor: pointer;
+
+        z-index: 11;
+    }
+    .Choice-02{
+        background-image: url("Choice-02.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        min-height: unset;
+        position: absolute;
+        height: 4.55%;
+        width:26%;
+        margin: auto;
+        background-position: center;
+
+        left: 68.4375%;
+        top: 81.474%;
+        height: 4.773%;
+        width:26%;
+        -webkit-animation: fadeIn 2.5s;
+  -moz-animation: fadeIn 2.5s;
+  -o-animation: fadeIn 2.5s;
+  -ms-animation: fadeIn 2.5s;
+  animation-fill-mode: forwards;
+opacity: 0;
+animation-delay:  2.5s;
+    }
+    .Choice-03{
+        background-image: url("Choice-03.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        min-height: unset;
+        position: absolute;
+        margin: auto;
+        background-position: center;
+
+        left: 68.4375%;
+        top: 86.136%;
+        height: 4.773%;
+        width:26%;
+        -webkit-animation: fadeIn 2.5s;
+  -moz-animation: fadeIn 2.5s;
+  -o-animation: fadeIn 2.5s;
+  -ms-animation: fadeIn 2.5s;
+  animation-fill-mode: forwards;
+opacity: 0;
+animation-delay:  2.8s;
+    }
+    .main {
+        display: flex;
+        align-items: center;
+        height: 100vh;
+    }
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+    </style>

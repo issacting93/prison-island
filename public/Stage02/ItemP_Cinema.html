@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+  <div class="image-container" >
+    <audio id="myAudio"
+    style="position:absolute; right:0px;z-index:10;"
+    preload="auto"
+    autoplay
+    src="./../Audio/SFX/Cinema.mp3"
+  > </audio>
+
+
+<div class="left-btn" onclick="buttonClick(-1)"></div>
+    <div  id="cinema" > </div>
+
+<div class="right-btn" onclick="buttonClick(1)"></div>
+<div class="cinema-text"></div>
+</div>
+<audio id="click" src="./../Audio/SFX/Clicking_SFX.mp3"></audio>
+</body>
+</html>
+
+
+<script>
+
+    var textNumber = 0;
+
+
+    let audio  = document.getElementById("click");
+    let sound;
+
+
+    function buttonClick(number){
+
+
+    textNumber += number;
+    if(textNumber >= 3){
+        textNumber=0;
+    }
+    else if(textNumber <= 0){
+        textNumber=3;
+    }
+
+    switch(textNumber) {
+    case 0:
+      document.getElementById("cinema").style.backgroundImage = "url('cinema-board1.png')";
+      playClick();
+      break;
+    case 1:
+      document.getElementById("cinema").style.backgroundImage = "url('cinema-board2.png')";
+      playClick();
+
+          break;
+    case 2:
+        document.getElementById("cinema").style.backgroundImage = "url('cinema-board3.png')";
+        playClick();
+      break;
+      default:
+      document.getElementById("cinema").style.backgroundImage= "url('cinema-board1.png')";
+      playClick();
+    }
+    }
+
+
+    function playClick() {
+    if (audio.paused) {
+      audio.play();
+    } else {
+      audio.currentTime = 0;
+    }s
+      }
+
+    </script>
+
+
+<style>
+    .right-btn {
+    width: 60px;
+    height: 60px;
+    background-image: url("right-btn.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.left-btn {
+    width: 60px;
+    height: 60px;
+    background-image: url("left-btn.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+}
+.image-container{
+    background-color: rgba(1,1,1,0.2);
+}
+#cinema {
+    background-image: url("cinema-board1.png");
+    background-size: contain;
+    height: 100vh;
+    aspect-ratio: 9/14;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cinema-text {
+    width: 20%;
+    height: 20%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 3%;
+    background-image: url("cinema-text.png");
+}
+</style>

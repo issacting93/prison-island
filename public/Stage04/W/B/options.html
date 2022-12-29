@@ -1,0 +1,172 @@
+
+
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta charset="utf8" />
+        <meta name="viewport" content="width=device-width" />
+
+        <title>Svelte app</title>
+
+        <link rel="stylesheet" href="../../../style.css" />
+      </head>
+    <div class="main">
+
+        <audio
+        style="position:absolute; right:0px;z-index:10;"
+        preload="auto"
+        autoplay
+        loop
+        src="221109_iRiot Stage 4 Warden_Run Away To Hide.mp3"
+      > </audio>
+        <div class="img-container">
+            <video width="100%" height="100%"  autoplay loop>
+                <source src="22_-_Jeep.mp4"type="video/mp4" />
+                <source src="movie.ogg" type="video/ogg" />
+                Your browser does not support the video tag.
+              </video>
+            <div class="outcome"></div>
+            <div class="Choice-00"></div>
+          <a href="A/options.html" class="choice  Choice-01">  </a>
+          <a href="B/options.html" class="choice Choice-02">  </a>
+        </div>
+        <!--
+     <div class="text-container">You see a group of detainees armed with changkols and parangs run towards the mess hall. What do you do?</div>
+
+        -->
+
+        <div class="outcome"></div>
+        <div class="loading-bar-wrapper">
+            <div class="loading-bar"></div>
+        </div>
+
+    </div>
+    <script>
+        setTimeout(openUrl, 30000); // Wait 5 secondsx
+     function openUrl(){
+     window.open('A/options.html',"_self");
+     }
+ </script>
+    <style>
+    .img-container{
+        max-width: 1600px;
+        aspect-ratio: 16/9;
+        background-size: contain;
+        background-repeat: no-repeat;
+        min-height: unset;
+        position: relative;
+        max-height: 900px;
+        max-width: 1600px;
+        width: calc(100vh*16/9 - 100px);
+        margin: auto;
+        z-index: 1111;
+
+        vertical-align: middle;
+        background-position: center;
+        -webkit-animation: fadeIn 2.5s;
+        -moz-animation: fadeIn 2.5s;
+        -o-animation: fadeIn 2.5s;
+        -ms-animation: fadeIn 2.5s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+        animation-delay:  0.3s;
+    }
+    .outcome{
+        max-width: 1600px;
+        aspect-ratio: 16/9;
+        background-image: url("Lalang-Outcome.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        min-height: unset;
+        position: absolute;
+        display: none;
+        max-width: 1600px;
+        margin: auto;
+        height: 100%;
+        background-position: center;
+        max-height: 100vh;
+    }
+
+    .Choice-00{
+        background-image: url("Where do you hide_.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        min-height: unset;
+        position: absolute;
+        height: 13.653%;
+        width:32.25%;
+        margin: auto;
+        background-position: center;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        -webkit-animation: fadeIn 2.5s;
+        -moz-animation: fadeIn 2.5s;
+        -o-animation: fadeIn 2.5s;
+        -ms-animation: fadeIn 2.5s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+        animation-delay:  s;
+    }
+    .Choice-01{
+        background-image: url("Choices-1.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        min-height: unset;
+        position: absolute;
+        height: 13.653%;
+        width:32.25%;
+        margin: auto;
+        background-position: center;
+        left: 72.8125%;
+        top: 75.147%;
+        height:3.108%;
+        width:32.1875%;
+        -webkit-animation: fadeIn 2.5s;
+        -moz-animation: fadeIn 2.5s;
+        -o-animation: fadeIn 2.5s;
+        -ms-animation: fadeIn 2.5s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+        animation-delay:  1s;
+    }
+    .choice:hover {
+        opacity: 0.7;
+    }
+    .choice {
+        cursor: pointer;
+
+        z-index: 11;
+    }
+    .Choice-02{
+        background-image: url("Choices-2.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        min-height: unset;
+        position: absolute;
+        margin: auto;
+        background-position: center;
+        left: 72.8125%;
+        top: 80.475%;
+        height: 6.993%;
+        width: 32.1875%;
+        -webkit-animation: fadeIn 2.5s;
+        -moz-animation: fadeIn 2.5s;
+        -o-animation: fadeIn 2.5s;
+        -ms-animation: fadeIn 2.5s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+        animation-delay:  1.5s;
+    }
+    .main {
+        display: flex;
+        align-items: center;
+        height: 100vh;
+    }
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+    </style>

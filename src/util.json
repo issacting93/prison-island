@@ -1,0 +1,15 @@
+[
+    {
+      "type": "images",
+      "next":  "url(Images/Common/Next.png)",
+      "textboxnext" : "url(Images/Common/text-next-btn.png)",
+      "bg" : "url(Images/Common/01-02-bg.png)",
+      "inkblot" : "url(Images/Common/inkblot.png)",
+      "textbox" : "url(Images/Common/textbox.png)",
+      "wardenThumbnail" : "url(Images/Common/Warden_thumbnail.png)",
+      "prisonerThumbnail" : "url(Images/Common/Prisoner_thumbnail.png)",
+      "arrow" : "url(Images/Common/arrow.png)",
+      "optionbox" : "url(Images/Common/optionbox.png)",
+      "back" : "url(Images/Common/close.png)"
+    }
+]

@@ -1,0 +1,100 @@
+
+
+@font-face {
+    font-family: "CrimsonPro-Italic";
+    src: url(Fonts/CrimsonPro-Italic-VariableFont_wght.ttf) format(truetype);
+  }
+
+  @font-face {
+    font-family: "CrimsonPro";
+    src: url(Fonts/CrimsonPro-VariableFont_wght.ttf) format(truetype);
+  }
+  @font-face {
+    font-family: "GrowlyGrin";
+    src: url(Fonts/GrowlyGrin-DVKD.ttf) format(truetype);
+  }
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #1a1a1a;
+  font-family: "CrimsonPro" ;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  color:white;
+  font-family: "CrimsonPro";
+}
+
+.card {
+  padding: 2em;
+}
+
+#preload {
+    display: none;
+  }
+
+#app {
+  max-width: 1600px;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+
+}
+
+button {
+  border-radius: 8px;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  color: white;
+  transition: border-color 0.25s;
+}
+
+.next-button {
+    background-image: url(Images/Next.png);
+    height: 80px;
+    width: 80px;
+    background-size: cover;
+    margin: auto;
+    border: 0px black solid;
+    margin-top: 20px;
+    position: absolute;
+    right: 40px;
+    border-radius: 100%;
+    top: 50%;
+    bottom: 50%;
+    transform: translate(0px, -50%);
+  }
+
+  .back-button {
+    height: 80px;
+    width: 80px;
+    background-size: cover;
+    margin: auto;
+    border: 0px black solid;
+    margin-top: 20px;
+    position: absolute;
+    left: 40px;
+    border-radius: 100%;
+    top: 50%;
+    bottom: 50%;
+    transform: translate(0px, -50%) rotate(180deg);
+  }

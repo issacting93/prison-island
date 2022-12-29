@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<script>
+var textNumber = 0;
+
+function buttonClick(){
+textNumber += 1;
+switch(textNumber) {
+
+  case 1:
+  document.getElementById("text-box").style.backgroundImage = "url('Speech 2 Musician.png')";
+    break;
+    case 2:
+    document.getElementById("text-box").style.backgroundImage = "url('Speech 3 Musician.png')";
+
+  break;
+    case 3:
+    var sound = document.getElementById('myAudio');
+    sound.pause();
+    sound.currentTime = 0;
+    document.getElementById("text-box").style.backgroundImage = "url('Speech 4 Musician.png')";
+    document.getElementById("background").src =  'new-musician-bg.png';
+    document.getElementById("movie").style.display = "flex";
+    document.getElementById("others").style.display = "none";
+    break;
+  default:
+  document.getElementById("text").innerHTML = "00";
+}
+}
+</script>
+
+<body>
+<div class="img-container">
+    <audio id="myAudio"
+    style="position:absolute; right:0px;z-index:10;"
+    preload="auto"
+    autoplay
+    src="./../Audio/SFX/Musicians.mp3"
+  > </audio>
+    <div class="text-box" id="text-box"  onclick=" buttonClick()">
+        </div>
+    <img class="background" id="background" src="Musicians.png" alt="Girl in a jacket"  width="auto" height="auto">
+    <img class="background" id="others" src="all_musicians.png" alt="Girl in a jacket"  width="auto" height="auto">
+
+<div class="movie" id="movie">
+
+    <video width="100%" height="100%" controls>
+        <source src="iRiot_Stage2_Hotspot2_Guitar_SiteFinal.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+</div>
+
+</div>
+</body>
+</html>
+</script>
+<style>
+body{
+    display: flex;
+}
+    .background{
+        position: absolute;
+        z-index: 1;
+        margin: auto;
+        width: 100%;
+    }
+    .speech-box{
+    position: absolute;
+    width: 650px;
+    }
+.text {
+    width: 100%;
+    font-size: 1.5rem;
+}
+.movie-background{
+
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    background-size: cover;
+}
+
+.movie{
+    position: absolute;
+    z-index: 111;
+    right: 142px;
+    display: none;
+    width: 60%;
+    aspect-ratio: 16/9;
+    justify-content: center;
+    align-items: center;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+video {
+    width: auto;
+    height: 85%;
+    padding: 20px;
+    margin-top: 8%;
+}
+    .speech{
+        position: absolute;
+    top: 10%;
+    left: 25%;
+    width: 650px;
+    }
+.pop-up{
+    position: absolute;
+    z-index: 11;
+    height: 576px;
+    width: auto ;
+    right: 10%;
+    top: 25%;
+}
+.text-box{
+    position: absolute;
+    top: 3.33%;
+    left: 8.4375%;
+    z-index: 10;
+    width: 35.75%;
+    padding: 40px;
+    height:20.875%;
+    background-image: url("Speech 1 Musician.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    cursor:pointer;
+}
+.option-box{
+    display: flex;
+    cursor:pointer;
+}
+.option-box:hover{
+    opacity: 0.6;
+}
+.img-container{
+      max-width: 1600px;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      position: relative;
+      align-items: center;
+      width: 100%;
+      aspect-ratio: 16/9;
+    }
+
+.option-box:active{
+    opacity: 0.8;
+}
+
+.next{
+    background-image: url("../Images/Common/Next.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 100;
+    width: 40px;
+    height: 40px;
+    right: 0px;
+    margin-top: 45px;
+    margin-right: 15px;
+}
+
+.next:hover{
+    opacity: 0.6;
+}
+
+
+.next:active{
+    opacity: 0.8;
+}
+.options{
+    background-image: url("../Images/Common/arrow.png");
+    height: 16px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-width: 16px;
+    margin-top: 8px;
+    margin-right: 8px;
+}
+.choices{
+    position: absolute;
+    top: 50%;
+    left: 80px;
+    max-width: 320px;
+    font-size: 24px;
+}

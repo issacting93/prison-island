@@ -1,0 +1,332 @@
+[
+    {
+    "type": "Transition",
+    "video": "Videos/iRiot_Stage1_Intro_SiteFinal.mp4",
+    "description": "Enter Pulau Senang’s Experimental Prison",
+    "text": [
+      ]
+  },
+
+  {
+    "type": "Video",
+    "video": "Videos/iRiot_Stage1_Intro_SiteFinal.mp4",
+    "text": [
+      "In 1960, 13 kilometres off the coast of Singapore, a revolutionary prison-without-bars launches on Pulau Senang.",
+      "Known as the ‘Island of Ease’, this idyllic tropical landscape is the backdrop to a prison reform experiment, where hardened criminals are free to roam the island and earn their release through honest and hard labour.",
+      "Three years later, all hell breaks loose. Rioting prisoners attack en masse.",
+      "The level of ferocity is shocking. In just 40 minutes, prison barracks are set on fire and multiple people are brutally killed.",
+      "How did this island of paradise descend into bloody chaos? And how did its survivors manage to stay alive?"
+    ]
+  },
+
+  {
+    "type": "Video2",
+    "video": "Videos/20221205_iRiot_Website_Intro Map_Version 3.mp4",
+    "text": [
+      "In 1960, 13 kilometres off the coast of Singapore, a revolutionary prison-without-bars launches on Pulau Senang.",
+      "Known as the ‘Island of Ease’, this idyllic tropical landscape is the backdrop to a prison reform experiment, where hardened criminals are free to roam the island and earn their release through honest and hard labour.",
+      "Three years later, all hell breaks loose. Rioting prisoners attack en masse.",
+      "The level of ferocity is shocking. In just 40 minutes, prison barracks are set on fire and multiple people are brutally killed.",
+      "How did this island of paradise descend into bloody chaos? And how did its survivors manage to stay alive?"
+    ]
+  },
+  {
+    "type": "Slate",
+    "stage": "Stage 1",
+    "title": "7 DAYS BEFORE THE RIOT.",
+    "description": "It’s your first day on the island. Explore the island and learn more about prison life.",
+    "titleImg" :"url(Images/Stage01/7-DAYS-BEFORE-THE-RIOT.gif)"
+
+  },
+  {
+    "type": "ChooseCharacterPage",
+    "title": "Stage 1",
+    "description": "It’s your first day on the island. Explore the island and learn more about prison life.",
+    "imgW": "url(Images/Stage01/Warden-selected.png)",
+    "imgWhover": "url(Images/Stage01/Warden-unselected.png)",
+    "imgP": "url(Images/Stage01/Prisoner-selected.png)",
+    "imgPhover": "url(Images/Stage01/Prisoner-unselected.png)",
+    "titleImg" :"url(Images/Stage01/Background-Choose.png)"
+  },
+
+  {
+    "type": "Textbox",
+    "textW": [
+      "Welcome to Pulau Senang. I’m the Prison Superintendent and I am in charge here. ",
+      "As you know this is a rehabilitation programme. Detainees come here from Changi Prison and are expected to work hard to earn their release.",
+      " If they fail at any point they will be sent back to the mainland and will have to start the process all over again. ",
+      " Off to work you go."
+    ],
+    "textWimg": [
+        "url(Images/Stage01/wardern_text_01.png)",
+        "url(Images/Stage01/Dutten_State_01.png)"
+    ],
+
+    "textP": [
+      "Welcome to Pulau Senang detainee. I’m the Warden ",
+      "As you know this is a rehabilitation programme. Detainees come here from Changi Prison and are expected to work hard to earn their release.",
+      "If they fail at any point they will be sent back to the mainland and will have to start the process all over again. ",
+      "Off to work you go."
+    ],
+    "textPimg": [
+        "url(Images/Stage01/Dutten_State_01.png)",
+        "url(Images/Stage01/Dutten_State_01.png)"
+    ],
+    "characterW": [
+      "Super Intendent",
+      "url(Images/Stage01/Dutten_State_01.png)",
+      "url(Images/Stage01/01_dutton_select_L.png)",
+      "url(Images/Stage01/01_dutton_select_R.png)"
+    ],
+    "characterP": [
+      "Warden",
+      "url(Images/Stage01/01_prisoner_select.png)",
+      "url(Images/Stage01/01_prisoner_select_right.png)",
+      "url(Images/Stage01/01_prisoner_select_left.png)"
+    ],
+    "imgW":[ "url(Images/Stage01/bg.png)" ],
+    "textboxWimg":  [
+        "url(Images/Stage01/Warden_Text_1.png)",
+        "url(Images/Stage01/Warden_Text_2.png)",
+        "url(Images/Stage01/Warden_Text_3.png)"],
+    "imgP": "url(Images/Stage01/bg.png)",
+    "textboxPimg": ["url(Images/Stage01/Prisoner_Text_1.png)","url(Images/Stage01/Prisoner_Text_2.png)","url(Images/Stage01/Prisoner_Text_3.png)"],
+    "imgText": "url(Images/Textbox.png",
+    "optionPlantation" :   "url(Images/Stage01/option 1.png)",
+    "optionConstruction" :  "url(Images/Stage01/option 2.png)",
+    "optionsW": [
+      [
+        "Plantation",
+        "Something something Something something",
+        "url(Images/Stage01/option 1.png)"
+      ],
+      [
+        "Construction",
+        "Something something Something something",
+        "url(Images/Stage01/option 2.png)"
+      ]
+    ],
+    "optionsP": [
+      [
+        "Plantation",
+        "Something something Something something",
+        "url(Images/Stage01/Plantation/plantation_bg.png)"
+      ],
+      [
+        "Construction",
+        "Something something Something something",
+        "url(Images/Stage01/Construction/bg.png)"
+      ]
+    ]
+  },
+  {
+    "type": "ItemDetails",
+    "page": "11AD",
+    "Plantation":"url(Images/Stage01/Plantation/plantation_bg.png)",
+    "img01itemP01":["2.6875%", "7.11%","/Stage01/Book01.html","url(Images/Stage01/Plantation/coconut.gif)","url(Images/Stage01/Plantation/coconut2.png)","15.875%","35%"],
+    "img01itemP02": ["46.5625%", "32.33%", "/Stage01/Book01.html", "url(Images/Stage01/Plantation/ )","url(Images/Stage01/Plantation/gardener2.png)","0","0"],
+    "img01itemP03": ["76.75%", "64.55%", "/Stage01/Book02.html","url(Images/Stage01/Plantation/paper.gif)","url(Images/Stage01/Plantation/paper2.png)","10.875%","7.77%"],
+    "img01itemP04": ["15.5%", "51.11%","/Stage01/Book03.html", "url(Images/Stage01/Plantation/goat.gif)","url(Images/Stage01/Plantation/goat2.png)","12.125%","36.77%"],
+    "img01":"url(Images/Stage01/Plantation/plantation_bg.png)",
+    "img01itemW01": ["2.6875%", "7.11%","/Stage01/Book01.html","url(Images/Stage01/Plantation/coconut.gif)","url(Images/Stage01/Plantation/coconut2.png)","15.875%","35%"],
+    "img01itemW02": ["76.75%", "64.55%", "/Stage01/Book02.html","url(Images/Stage01/Plantation/paper.gif)","url(Images/Stage01/Plantation/paper2.png)","10.875%","7.77%"],
+    "img01itemW03": ["46.5625%", "32.33%", "/Stage01/Book01.html", "url(Images/Stage01/Plantation/)","url(Images/Stage01/Plantation/gardener2.png)","0%","0%"],
+    "img01itemW04": ["14.75%", "49.11%", "/Stage01/Book03.html", "url(Images/Stage01/Plantation/goat.gif)","url(Images/Stage01/Plantation/goat2.png)","12.125%","36.77%"],
+    "character01": [
+        "27.75%",
+        "66.22%",
+        "61.4375%",
+        "27.55%",
+        "url(Images/Stage01/Plantation/cop.gif)",
+        "url(Images/Stage01/Plantation/cop1.png)"
+      ],
+      "character02": [
+        "19.125%",
+        "46.55%",
+        "46.8125%",
+        "32.33%",
+        "url(Images/Stage01/Plantation/gardener.gif)",
+        "url(Images/Stage01/Plantation/gardener2.png)"
+      ],
+    "img02": "url(Images/Stage01/Construction/bg.png)",
+    "img02itemP01":  ["63.125%", "46.55%", "/Stage01/Book01.html","url(Images/Stage01/Construction/ )","url(Images/Stage01/Construction/ )","0px","0px"],
+    "img02itemP02":  ["6%", "64%", "/Stage01/Book02.html","url(Images/Stage01/Construction/paper.gif)","url(Images/Stage01/Construction/paper2.png)","9.15625%","8.3%"],
+    "img02itemP03": ["53.375%", "72.2%", "/Stage01/Book05.html","url(Images/Stage01/Construction/wheelbarrow.png )","url(Images/Stage01/Plantation )"," 26.3125%","23.33%"],
+    "img02itemP04": ["241px", "450px", "/Stage01/Book03.html", "url(Images/Stage01/Plantation/ )","url(Images/Stage01/Plantation/ )"," ",""],
+    "img02img01":"url(Images/Stage01/Plantation/plantation_bg.png)",
+    "img02itemW01":  ["1010px", "419px", "/Stage01/Book01.html","url(Images/Stage01/Construction/ )","url(Images/Stage01/Construction/ )","0px","0px"],
+    "img02itemW02": ["6%", "64%", "/Stage01/Book02.html","url(Images/Stage01/Construction/paper.gif)","url(Images/Stage01/Construction/paper2.png)","9.15625%","8.3%"],
+    "img02itemW03": ["53.375%", "72.2%", "/Stage01/Book05.html","url(Images/Stage01/Construction/wheelbarrow.png )","url(Images/Stage01/Plantation )"," 26.3125%","23.33%"],
+    "img02itemW04": ["241px", "450px", "/Stage01/Book03.html", "url(Images/Stage01/Plantation/ )","url(Images/Stage01/Plantation/ )"," ",""],
+    "character03": [
+        "22.0625%",
+        "50.22%",
+        "40.25%",
+        "31%",
+        "url(Images/Stage01/Construction/cop.gif)",
+        "url(Images/Stage01/Construction/cop-speech-01.png)"
+
+      ],
+      "character04": [
+        "19.375%",
+        "30.3%",
+        "62.1%",
+        "31.56%",
+        "url(Images/Stage01/Construction/worker.gif)",
+        "url(Images/Stage01/Construction/worker1.png)"
+      ]
+  },  {
+    "type": "Slate",
+    "stage": "Stage 2",
+    "title": "7 DAYS BEFORE THE RIOT.",
+    "description": "It’s your first day on the island. Explore the island and learn more about prison life.",
+    "titleImg" :"url(Images/Stage02/6-DAYS-BEFORE-THE-RIOT.gif)"
+  },
+  {
+    "type": "ItemDetails2",
+    "page": "11AD",
+    "img01itemP01": ["39%", "41.403%","/Stage02/ItemP_Cinema.html","url(Images/Stage02/Door.gif)","url(Images/Stage02/Door.png)","4.5625%","16.983%"],
+    "img01itemP02": ["5.75%", "49.95%", "/Stage02/ItemP_Gangsters.html", "url(Images/Stage02/Gangsters.gif)","url(Images/Stage02/Gangsters.gif)","14.125%","26.418%"],
+    "img01itemP03": ["46%", "40.404%", "/Stage02/ItemP_Musicians.html","url(Images/Stage02/Guitarist.gif)","url(Images/Stage02/Guitarist.gif)","11.9375%","38.406%"],
+    "img01itemP04": ["79.375%", "34.965%","/Stage02/ItemP_Poster.html", "url(Images/Stage02/Poster.gif  )","url(Images/Stage01/Plantation/ )","3.8%","13.875%"],
+    "img01itemP05": ["89.375%", "64.713%","/Stage02/ItemP_Recorder.html", "url(Images/Stage02/Recorder.png)","url(Images/Stage01/Plantation/ )","9%","9.324%"],
+    "img01itemP06": ["67.75%", "49.506%","/Stage02/ItemP_Flyer.html", "url(Images/Stage02/flyer-guy.gif)","url(Images/Stage01/Plantation/ )","22.6875%","28.305%"],
+    "img01":"url(Stage02/Prisoner_Quarters.png )",
+    "img01itemW01": ["80.125%", "20.767%", "/Stage02/ItemW_Poster.html","url(Images/Stage02/Poster.png)","url(Images/Stage01/Plantation/worker2.png)","13.375%","27.296%"],
+    "img01itemW02": ["71.81%", "61.44%", "/Stage02/ItemW_Watch.html","url(Images/Stage02/watch.gif","url(Images/Stage01/Plantation/paper2.png)","3.81%","5.56%"],
+    "img01itemW03": [ "25.5%","68.376%","/Stage02/ItemW_flipbook.html", "url(Images/Stage02/flipbook.gif )","url(Images/Stage01/Plantation/gardener2.png)","6.5625%", "6.771%"],
+    "img01itemW04": ["82.63%", "59.67%", "/Stage02/ItemW_Recorder.html","url(Images/Stage02/Recorder.png )","url(Images/Stage01/Plantation )"," 9%","9.33%"],
+    "img01itemW05": ["64.25%", "36.67%", "/Stage02/ItemW_Map.html","url(Images/Stage02/Map.png )","url(Images/Stage01/Plantation )"," 8%","9.11%"],
+    "character01": [
+        "26.81%",
+        "72.118%",
+        "41.38%",
+        "18.78%",
+        "url(Images/Stage02/warden.gif)",
+        "url(Images/Stage02/Warden.png)",
+        "url(Images/Stage02/Warden-1.png)",
+        "url(Images/Stage02/Warden-2.png)"
+
+      ],
+    "img02itemP01": ["43px", "64px","/Stage01/Book01.html","url(Images/Stage01/Plantation/coconut1.png)","url(Images/Stage01/Plantation/coconut2.png)","254px","315px"],
+    "img02itemP02": ["800px", "400px", "/Stage01/Book01.html", "url(Images/Stage01/Plantation/gardener1.png)","url(Images/Stage01/Plantation/gardener2.png)","148px","288px"],
+    "img02itemP03": ["1242px", "611px", "/Stage01/Book05.html","url(Images/Stage01/Plantation/paper1.png)","url(Images/Stage01/Plantation/paper2.png)","174px","70px"],
+    "img02itemP04": ["248px", "460px","/Stage01/Book03.html", "url(Images/Stage01/Plantation/goat1.png)","url(Images/Stage01/Plantation/goat2.png)","194px","331px"],
+    "img02":"url(Stage02/Warden_Quarters.png )",
+    "img02itemW01":  ["1010px", "419px", "/Stage01/Book01.html","url(Images/Stage01/Construction/ )","url(Images/Stage01/Construction/ )","0px","0px"],
+    "img02itemW02": ["96px", "576px", "/Stage01/Book05.html","url(Images/Stage01/Construction/paper1.png)","url(Images/Stage01/Construction/paper2.png)","146.5px","75px"],
+    "img02itemW03": ["988px", "389px", "/Stage02/ItemW_Recorder.html","url(Stage02/ )","url(Images/Stage01/Plantation )","0","0"],
+    "img02itemW04": ["241px", "450px", "/Stage01/Book03.html", "url(Images/Stage01/Plantation/ )","url(Images/Stage01/Plantation/ )"," ",""],
+    "character02": [
+        "22.97%",
+        "39.294%",
+        "18.875%",
+        "10.434%",
+        "url(Images/Stage02/Uniform-00.png)",
+        "url(Images/Stage02/Uniform-01.png)"
+
+      ],
+      "character03": [
+        "361px",
+        "273px", "996px",
+        "257px",
+        "url(Images/Stage01/Construction/worker1.png)",
+        "url(Images/Stage01/Construction/worker2.png)"
+      ]
+  },
+  {
+    "type": "Video",
+    "video": "Videos/iRiot_Stage3_Jetty_SiteFinal.mp4",
+    "description": "6 Days before the riot",
+    "text": [
+
+    ]
+  },
+
+  {
+    "type": "EscapeChoice",
+    "background": "",
+    "choices": ["Option 01", "Option 02", "Option 03", "Option 04"]
+  },
+
+  {
+    "type": "Slate",
+    "stage": "Stage 4",
+    "title": "HOW WILL YOU SURVIVE THE RIOT?",
+    "description": "12TH JULY 1963 / 1300"
+  },
+  {
+    "type": "EscapeChoice",
+    "text": "",
+    "background": "",
+    "choices": ["Option 01", "Option 02", "Option 03", "Option 04"]
+  },
+  {
+    "type": "Biography",
+    "img": "Image3.png"
+  },
+
+  {
+    "type": "ChooseCharacterPage",
+    "title": "Stage 2",
+    "description": [
+      "You're done with work for the day.",
+      "Time to head to your dormitory."
+    ],
+    "imgW": "url(Images/Stage02/chooseW.jpg)",
+    "imgP": "url(Images/Stage02/chooseP.jpg)",
+    "titleImg" :"url(Images/Stage02/Title-02.png)"
+  }
+,
+
+{
+    "type": "Textbox",
+    "textP": [
+      "Hey, you look lost. Come and join me and my crew in the corner. "
+    ],
+    "textW": [
+      "Hey, you look lost. Come and join me and my friends in the corner. "
+    ],
+    "characterW": [
+      "Super Intendent",
+      "url(Images/Stage02/02_ganster_default.png)",
+      "url(Images/Stage02/02_ganster_select_01.png)",
+      "url(Images/Stage02/02_ganster_select_02.png)",
+      "url(Images/Stage02/02_ganster_select_03.png)"
+    ],
+    "characterP": ["Warden", "url(Images/Stage02/02_ganster_default.png)",
+    "url(Images/Stage02/02_ganster_select_01.png)",
+    "url(Images/Stage02/02_ganster_select_02.png)",
+    "url(Images/Stage02/02_ganster_select_03.png)"],
+    "imgW": "url(Images/Warden_Quarters.png)",
+    "imgP": "url(Images/TextP.png)",
+    "imgText": "url(Images/Textbox.png",
+    "optionsP": [
+      ["Join him.", "This isn't a guy you say no to. ", "Good decision."],
+      [
+        "Politely decline.",
+        "You’re feeling the [insert hit 1960s artist/album] grooves tonight.",
+        "<i> Swears in Dialect </i> "
+      ],
+      [
+        "Check out the prison cinema.",
+        "After a hard day’s work, all you want to do is retreat into hermit mode and watch something brainless. ",
+        "<i>Whatever </i>"
+      ]
+    ],
+    "optionsW": [
+      ["Join him.", "This isn't a guy you say no to. ", "Good decision."],
+      [
+        "Politely decline.",
+        "You’re feeling the [insert hit 1960s artist/album] grooves tonight.",
+        "<i> Swears in Dialect </i> "
+      ],
+      [
+        "Head to prison cinema.",
+        "After a hard day’s work, all you want to do is retreat into hermit mode and watch something brainless. ",
+        "<i>Whatever </i>"
+      ]
+    ]
+  }
+
+]

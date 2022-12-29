@@ -1,0 +1,163 @@
+
+
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta charset="utf8" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="icon" type="image/svg+xml" href="../../../../Prisoner_thumbnail.png" />
+        <title>Prison Island</title>
+
+
+        <link rel="stylesheet" href="../../../style.css" />
+      </head>
+    <div class="main">
+
+        <div class="img-container">
+            <div class="outcome"></div>
+
+          <a href="kitchenraid.html" class="choice Choice-02">  </a>
+      <a href="end-01-outcome.html" class="choice Choice-03"> </a>
+        </div>
+        <!--
+     <div class="text-container">You see a group of detainees armed with changkols and parangs run towards the mess hall. What do you do?</div>
+
+        -->
+        <audio
+        style="position:absolute; right:0px;z-index:10;"
+        preload="auto"
+        autoplay
+        loop
+        src="221113_iRiot Stage 4 Priosner_Head for Dormitory.mp3"
+      > </audio>
+        <div class="loading-bar-wrapper">
+            <div class="loading-bar"></div>
+        </div>
+
+<audio id="click" src="./../Audio/SFX/Clicking_SFX.mp3"></audio>
+    </div>
+    <script>
+        setTimeout(openUrl, 30000); // Wait 5 secondsx
+        function openUrl(){
+window.open('A/end-01-outcome.html',"_self");
+        }
+
+let audio  = document.getElementById("click");
+
+function playClick() {
+    if (audio.paused) {
+      audio.play();
+    } else {
+      audio.currentTime = 0;
+    }
+      }
+        </script>
+    <style>
+    .img-container{
+        max-width: 1600px;
+        aspect-ratio: 16/9;
+        background-image: url("3-Detainees-BG.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: unset;
+        position: relative;
+        max-height: 100%;
+        width:calc(100vh*16/9 - 100px);
+        margin: auto;
+        z-index: 1111;
+        vertical-align: middle;
+        background-position: center;
+        animation: fadeIn 0.2s;
+        opacity: 0;
+        -webkit-animation: fadeIn 0.5s;
+        -moz-animation: fadeIn 0.5s;
+        -o-animation: fadeIn 0.5s;
+        -ms-animation: fadeIn 0.5s;
+        animation-fill-mode: forwards;
+        animation-delay: 1.3s;
+    }
+    .choice:hover {
+        opacity: 0.7;
+    }
+    .choice {
+        cursor: pointer;
+        z-index: 11;
+    }
+
+    .Choice-01{
+        background-image: url("Boat-Options.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        min-height: unset;
+        position: absolute;
+        height: 13.653%;
+        width:32.25%;
+        margin: auto;
+        background-position: center;
+        left:64.625%;
+        top:10.434%;
+        height: 2.997%;
+        width:35.375%;
+        opacity: 0;
+        animation: fadeIn 0.2s;
+        -webkit-animation: fadeIn 0.5s;
+        -moz-animation: fadeIn 0.5s;
+        -o-animation: fadeIn 0.5s;
+        -ms-animation: fadeIn 0.5s;
+        animation-fill-mode: forwards;
+        animation-delay: 2s;
+    }
+    .Choice-02{
+        background-image: url("3-Detainees-Choices-01.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        min-height: unset;
+        position: absolute;
+        margin: auto;
+        background-position: center;
+        left:62.875%;
+        top: 76.483%;
+        height: 3.219%;
+        width:29%;
+        opacity: 0;
+        animation: fadeIn 0.2s;
+        -webkit-animation: fadeIn 0.5s;
+        -moz-animation: fadeIn 0.5s;
+        -o-animation: fadeIn 0.5s;
+        -ms-animation: fadeIn 0.5s;
+        animation-fill-mode: forwards;
+        animation-delay: 2.6s;
+    }
+    .Choice-03{
+        background-image: url("3-Detainees-Choices-02.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        min-height: unset;
+        position: absolute;
+        margin: auto;
+        background-position: center;
+        margin-top: 3%;
+        left:62.875%;
+        top: 76.483%;
+        height: 6.882%;
+        width:29%;
+        opacity: 0;
+        animation: fadeIn 0.2s;
+        -webkit-animation: fadeIn 0.5s;
+        -moz-animation: fadeIn 0.5s;
+        -o-animation: fadeIn 0.5s;
+        -ms-animation: fadeIn 0.5s;
+        animation-fill-mode: forwards;
+        animation-delay: 3.3s;
+    }
+    .main {
+        display: flex;
+        align-items: center;
+        height: 100vh;
+    }
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+    </style>

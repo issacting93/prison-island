@@ -307,12 +307,15 @@
     <img src="./Stage02/Images/page03-L.png" alt="" />
     <img src="./Stage02/Images/page03-R.png" alt="" />
     <img src="./Stage02/all_musicians.png" alt="" />
+   <!-- 
+  <video src="./Stage04/Endings/iRiot_Postscript+EndTag_SiteFinal.mp4" />
+  
     <img src="./Images/Stage02/Musicians.png" alt="" />
     <img src="./Images/Stage02/background-01.png" alt="" />
     <img src="./Images/Stage02/background-02.png" alt="" />
     <img src="./Images/Stage01/Construction/Map Pop up/map.png" alt="" />
     <img src="./Images/count-down.gif" alt="" />
-    <video src="./Stage04/Endings/iRiot_Postscript+EndTag_SiteFinal.mp4" />
+   -->
   </div>
 
   <div class="mobile">Please use a desktop for the full experience</div>
